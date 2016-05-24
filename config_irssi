@@ -1,0 +1,35 @@
+servers = (
+  {
+    address = "aim.mn";
+    chatnet = "aim";
+    port = "50404";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "Yes";
+    password = "username:password";
+  }
+);
+
+chatnets = { networkName = { type = "IRC"; nick = "somenick"; }; };
+
+
+settings = {
+  core = {
+    real_name = "Real Name";
+    user_name = "someNick/networkName";
+    nick = "someNick";
+    hostname = "networkName";
+  };
+  "fe-text" = { actlist_sort = "refnum"; scroll = "yes"; };
+  "fe-common/core" = {
+    autocreate_windows = "yes";
+    autocreate_query_level = "MSGS";
+  };
+  "fe-commonn/core" = {
+    autocreate_windows = "yes";
+    beep_when_window_active = "yes";
+    bell_beeps = "yes";
+    beep_msg_level = "MSGS NOTICES INVITES DCC DCCMSGS HILIGHT";
+  };
+};
+channels = ( );
